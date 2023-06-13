@@ -1,0 +1,6 @@
+" export data to memory
+  get time stamp field l_timestamp.
+  l_string = l_timestamp.
+  concatenate 'ZPI_' l_string into l_memory_id.
+
+  export wa_data from wa_data to database indx(za) id l_memory_id.
